@@ -23,7 +23,7 @@ We provide two label formats, txt format and xml format. When you unzip it, its 
       |——['.txt']
 ```
 There is only one text file, where each line is formatted as follows:path rotatedbox1 catagory1 rotatedbox2 catagory2 ... like the image below shows.
-![image](https://github.com/waeada/LocBSAR/blob/main/images/image1.png)
+
 In the catagory information, 0 is for land, 1 is for sea and 2 is for ship. 
 
 ### Dataset visualization 
