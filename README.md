@@ -3,7 +3,7 @@ It is a pytorch implementation for LocBSAR which can generate complex SAR ship i
 We will add to this project when our paper is published.
 ## Setup
 ## Datasets
-We re-labeled the HRSID dataset, using rotated boxes for all targets. Noted that land and sea usually have horizontal edges, we used a rotated frame with an angle of 0 in the labeling. Besides, in order to balance the number of ships with other classes of targets in the dataset, we added another 763 images of only land and sea targets using data enhancement methods, which will allow the model to better learn the features of other targets (especially land). In total, the dataset contains 2364 images with rotated box.
+We re-labeled the HRSID dataset, using rotated boxes for all targets. Noted that land and sea usually have horizontal edges, we used a rotated frame with an angle of 0 in the labeling. Besides, in order to balance the number of ships with other classes of targets in the dataset, we added another 530 images of only land and sea targets using data enhancement methods, which will allow the model to better learn the features of other targets (especially land). In total, the dataset contains 2362 images with rotated box.
 
 The datasets will be pubilshed after the paper is pubished.
 ### Prepare data
