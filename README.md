@@ -3,14 +3,14 @@ It is a pytorch implementation for LocBSAR which can generate complex SAR ship i
 We will add to this project when our paper is published.
 ## Setup
 ## Datasets
-We re-labeled the HRSID dataset, using rotated boxes for all targets. Noted that land and sea usually have horizontal edges, we used a rotated frame with an angle of 0 in the labeling. Besides, in order to balance the number of ships with other classes of targets in the dataset, we added another about 600 images of only land and sea targets using data enhancement methods, which will allow the model to better learn the features of other targets (especially land). In total, the dataset contains 2364 images with rotated box.
+We re-labeled the HRSID dataset, using rotated boxes for all targets. Noted that land and sea usually have horizontal edges, we used a rotated frame with an angle of 0 in the labeling. Besides, in order to balance the number of ships with other classes of targets in the dataset, we added another 763 images of only land and sea targets using data enhancement methods, which will allow the model to better learn the features of other targets (especially land). In total, the dataset contains 2364 images with rotated box.
 
 The datasets will be pubilshed after the paper is pubished.
 ### Prepare data
-We provide two label formats, txt format and xml format. When you unzip it, its format is shown as follows.
+We provide three label formats. They are txt format, xml format and . When you unzip it, its format is shown as follows.
 ```
 |——Multicata HRSID
-  |——images # 2364 images
+  |——images # 2362 images
     |——['.jpg']
     |——  ...
     |——['.jpg']
@@ -21,10 +21,14 @@ We provide two label formats, txt format and xml format. When you unzip it, its 
       |——['.xml']
     |——txt
       |——['.txt']
+    |——
 ```
-There is only one text file, where each line is formatted as follows:path rotatedbox1 catagory1 rotatedbox2 catagory2 ... like the image below shows.
+By the way, we use 0 is for land, 1 is for sea and 2 is for ship.
+There is only one text file in the "txt" folder, where each line is formatted as follows:**path rotatedbox1(cx,cy,w,h,angle) catagory1 rotatedbox2(cx,cy,w,h,angle) catagory2 ...** just like the image below shows.
 
-In the catagory information, 0 is for land, 1 is for sea and 2 is for ship. 
+![image](https://github.com/waeada/LocBSAR/blob/main/images/image1.png)
+
+
 
 ### Dataset visualization 
 ![image](https://github.com/waeada/LocBSAR/blob/main/images/image3.png)
