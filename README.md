@@ -1,4 +1,4 @@
-# LocBSAR
+# LocSAR
 It is a pytorch implementation for LocBSAR which can generate complex SAR ship image at a specified location.
 We will add to this project when our paper is published.
 ## Setup
