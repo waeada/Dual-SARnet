@@ -7,7 +7,7 @@ We re-labeled the HRSID dataset, using rotated boxes for all targets. Noted that
 
 The datasets will be pubilshed after the paper is pubished.
 ### Prepare data
-We provide three label formats. They are txt format, xml format and . When you unzip it, its format is shown as follows.
+We provide three label formats. They are txt format, voc format and . When you unzip it, its format is shown as follows.
 ```
 |——Multicata HRSID
   |——images # 2362 images
@@ -15,13 +15,12 @@ We provide three label formats. They are txt format, xml format and . When you u
     |——  ...
     |——['.jpg']
   |——annotations
-    |——xml
+    |——voc
       |——['.xml']
       |—— ...
       |——['.xml']
     |——txt
       |——['.txt']
-    |——
 ```
 By the way, we use 0 is for land, 1 is for sea and 2 is for ship.
 There is only one text file in the "txt" folder, where each line is formatted as follows:**path rotatedbox1(cx,cy,w,h,angle) catagory1 rotatedbox2(cx,cy,w,h,angle) catagory2 ...** just like the image below shows.
