@@ -33,7 +33,7 @@ There is only one text file in the "txt" folder, where each line is formatted as
 ![image](https://github.com/waeada/LocSAR/blob/main/images/image3.png)
 
 ## Visualization generates results
-With our new labled dataset, our model achieves an amazing results.
+With our new labled dataset, our model achieves an amazing results. We provide a comparison image among (a) visual mask map, (b) real image and (c) LocSAR.
 
 ![image](https://github.com/waeada/LocSAR/blob/main/images/image5.png)
 
